@@ -1,4 +1,4 @@
-# let users move through rooms based on user input and get descriptions of each room.
+
 # establish the direction in which the user can move
 # establish a way to track how far the user has moved (and therefore which room he/she is in)
 # print out a description
@@ -17,6 +17,7 @@ def adventure_game():
     while True:
 
         current_room = room[current_room_index]
+        # let users move through rooms based on user input and get descriptions of each room.
         direction = input(f"You are in {current_room}. Which direction would you like to move to? (left/right/stop): ").lower()
 
         if direction == "left":
