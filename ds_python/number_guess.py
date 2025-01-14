@@ -1,15 +1,11 @@
-
-
-
-
-
+# import python random module
 import random
+
 def number_guess():
     # first randomly generate a number unknown to the user.
     random_number = random.randint(1,100)
 
     while True:
-
         try:
             # The user needs to guess what that number is.
             guess = int(input("Guess the number between 1 and 100: "))
