@@ -31,7 +31,7 @@ def adventure_game():
     guest_room = "guest room, where you have friends"
 
     # list of rooms
-    room = [[kitchen, bedroom, office],[toilet, storage, guest_Room]]
+    room = [[kitchen, bedroom, office],[toilet, storage, guest_room]]
     
     # start in the first row
     current_row_index = 0
