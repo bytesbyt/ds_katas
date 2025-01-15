@@ -8,7 +8,7 @@ the end with the input included.
 
 def mad_libs_generator():
 
-    # Define a listof prompts for user input
+    # Define a list of prompts for user input
     prompts = [
         "Enter an adjective: ",
         "Enter a noun: ",
