@@ -23,15 +23,15 @@ def adventure_game():
         """
     )
 
-    Kitchen = "kitchen, where the spice of life comes alive"
-    Bedroom = "bedroom, where the magic happens"
-    Office = "office, the source of wealth"
-    Toilet = "toilet you know what happens here"
-    Storage = "storage, where there are all sorts of stuff"
-    Guest_Room = "guest room, where you have friends"
+    kitchen = "kitchen, where the spice of life comes alive"
+    bedroom = "bedroom, where the magic happens"
+    office = "office, the source of wealth"
+    toilet = "toilet you know what happens here"
+    storage = "storage, where there are all sorts of stuff"
+    guest_room = "guest room, where you have friends"
 
     # list of rooms
-    room = [[Kitchen, Bedroom, Office],[Toilet, Storage, Guest_Room]]
+    room = [[kitchen, bedroom, office],[toilet, storage, guest_Room]]
     
     # start in the first row
     current_row_index = 0
