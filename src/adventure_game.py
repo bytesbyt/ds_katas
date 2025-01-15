@@ -1,6 +1,5 @@
 """
-A complete text
-game, the program will let users move through rooms based on user input and get descriptions
+A complete text game, the program will let users move through rooms based on user input and get descriptions
 of each room. To create this, you'll need to establish the direction in which the user can move, a
 way to track how far the user has moved (and therefore which room he/she is in), and to print
 out a description. You'll also need to set limits for how far the user can move. In other words,
@@ -98,14 +97,3 @@ def adventure_game():
         print(f"\nTotal walks taken: {walk_count}\n")
 
 adventure_game()
-
-
-
-
-
-
-
-
-
-
-
