@@ -1,8 +1,5 @@
-# establish the direction in which the user can move
-# establish a way to track how far the user has moved (and therefore which room he/she is in)
-# print out a description
-# set limits for how far the user can move
-# Create “walls” around the rooms that tell the user, “You can’t move further in this direction
+
+
 
 def adventure_game():
 
@@ -44,32 +41,40 @@ def adventure_game():
         direction = input(f"You are in {current_room}.\nWhich direction would you like to move to?\nPlease enter left/right/up/down/stop: ").lower()
 
         if direction == "left":
+            # set limits for how far the user can move
             if current_room_index == 0:
                 print("\nYou cannot go left, try the other direction.")
+            # track which room user has moved to
             else:
                 current_room_index -= 1
                 walk_count += 1
                 print(f"\nYou moved left to the {room[current_row_index][current_room_index]}.")
 
         elif direction == "right":
+            # set limits for how far the user can move
             if current_room_index == len(room[current_row_index]) -1:
                 print("\nYou cannot go right, try the other direction.")
+            # track which room user has moved to
             else:
                 current_room_index += 1
                 walk_count += 1
                 print(f"\nYou moved right to the {room[current_row_index][current_room_index]}.")
 
         elif direction == "up":
+            # set limits for how far the user can move
             if current_row_index == 0:
                 print("\nYou cannot go up, try the other direction.")
+            # track which room user has moved to
             else:
                 current_row_index -= 1
                 walk_count += 1
                 print(f"\nYou moved up to the {room[current_row_index][current_room_index]}.")
 
         elif direction == "down":
+            # set limits for how far the user can move
             if current_row_index == len(room) -1:
                 print("\nYou cannot go down, try the other direction.")
+            # track which room user has moved to
             else:
                 current_row_index += 1
                 walk_count += 1
@@ -82,7 +87,7 @@ def adventure_game():
         else:
             print("\nInvalid Input. Please enter left or right or stop.")
             continue
-
+        # establish a way to track how far the user has moved
         print(f"\nTotal walks taken: {walk_count}\n")
 
 adventure_game()
