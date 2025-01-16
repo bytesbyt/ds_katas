@@ -91,7 +91,7 @@ def adventure_game():
             break
 
         else:
-            print("\nInvalid Input. Please enter left or right or stop.")
+            print("\nInvalid Input. Please try again.")
             continue
         # establish a way to track how far the user has moved
         print(f"\nTotal walks taken: {walk_count}\n")
