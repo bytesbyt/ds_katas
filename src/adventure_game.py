@@ -38,8 +38,6 @@ def adventure_game():
     current_column_index = 0
     # walk counter
     walk_count = 0
-    # current room list indexing stored in current_room variable 
-    current_room = room[current_row_index][current_column_index]
 
     while True:
         # current room list indexing stored in current_room variable 
