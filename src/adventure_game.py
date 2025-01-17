@@ -53,7 +53,7 @@ def adventure_game():
             else:
                 current_column_index -= 1
                 walk_count += 1
-                print(f"\nYou moved left to the {room[current_row_index][current_column_index]}.")
+                print(f"\nYou moved left to the {current_room}.")
 
         elif direction == "right":
             # set limits for how far the user can move
@@ -63,7 +63,7 @@ def adventure_game():
             else:
                 current_column_index += 1
                 walk_count += 1
-                print(f"\nYou moved right to the {room[current_row_index][current_column_index]}.")
+                print(f"\nYou moved right to the {current_room}.")
 
         elif direction == "up":
             # set limits for how far the user can move
@@ -73,7 +73,7 @@ def adventure_game():
             else:
                 current_row_index -= 1
                 walk_count += 1
-                print(f"\nYou moved up to the {room[current_row_index][current_column_index]}.")
+                print(f"\nYou moved up to the {current_room}.")
 
         elif direction == "down":
             # set limits for how far the user can move
@@ -83,11 +83,11 @@ def adventure_game():
             else:
                 current_row_index += 1
                 walk_count += 1
-                print(f"\nYou moved down to the {room[current_row_index][current_column_index]}.")
+                print(f"\nYou moved down to the {current_room}.")
         
         elif direction == "stop":
             # exits the program
-            print(f"\nYou are in the {room[current_row_index][current_column_index]}. Thank you for your visit!")
+            print(f"\nYou are in the {current_room}. Thank you for your visit!")
             break
 
         else:
