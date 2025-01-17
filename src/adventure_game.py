@@ -32,17 +32,19 @@ def adventure_game():
 
     # list of rooms
     room = [[kitchen, bedroom, office],[toilet, storage, guest_room]]
-    
     # start in the first row
     current_row_index = 0
     # start in the first column (kitchen)
     current_column_index = 0
     # walk counter
     walk_count = 0
+    # current room list indexing stored in current_room variable 
+    current_room = room[current_row_index][current_column_index]
 
     while True:
+        # current room list indexing stored in current_room variable 
         current_room = room[current_row_index][current_column_index]
-        # let users move through rooms based on user input and get descriptions of each room.
+        # let users move through rooms based on user input and get descriptions of each room
         direction = input(f"You are in {current_room}.\nWhich direction would you like to move to?\nPlease enter left/right/up/down/stop: ").lower()
 
         if direction == "left":
@@ -53,7 +55,7 @@ def adventure_game():
             else:
                 current_column_index -= 1
                 walk_count += 1
-                print(f"\nYou moved left to the {current_room}.")
+                print(f"\nYou moved left to the {room[current_row_index][current_column_index]}.")
 
         elif direction == "right":
             # set limits for how far the user can move
@@ -63,7 +65,7 @@ def adventure_game():
             else:
                 current_column_index += 1
                 walk_count += 1
-                print(f"\nYou moved right to the {current_room}.")
+                print(f"\nYou moved right to the {room[current_row_index][current_column_index]}.")
 
         elif direction == "up":
             # set limits for how far the user can move
@@ -73,7 +75,7 @@ def adventure_game():
             else:
                 current_row_index -= 1
                 walk_count += 1
-                print(f"\nYou moved up to the {current_room}.")
+                print(f"\nYou moved up to the {room[current_row_index][current_column_index]}.")
 
         elif direction == "down":
             # set limits for how far the user can move
@@ -83,7 +85,7 @@ def adventure_game():
             else:
                 current_row_index += 1
                 walk_count += 1
-                print(f"\nYou moved down to the {current_room}.")
+                print(f"\nYou moved down to the {room[current_row_index][current_column_index]}.")
         
         elif direction == "stop":
             # exits the program
