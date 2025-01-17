@@ -68,7 +68,7 @@ def main():
     kitchen = "kitchen, where the spice of life comes alive"
     bedroom = "bedroom, where the magic happens"
     office = "office, the source of wealth"
-    toilet = "toilet you know what happens here"
+    toilet = "toilet, you know what happens here"
     storage = "storage, where there are all sorts of stuff"
     guest_room = "guest room, where you have friends"
 
