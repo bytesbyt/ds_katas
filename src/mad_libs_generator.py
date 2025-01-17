@@ -5,6 +5,27 @@ once all the information has been inputted, the program will take that data and 
 premade story template. You'll need prompts for user input, and to then print out the full story at
 the end with the input included.
 """
+def get_user_input(prompts):
+    """
+    Utility function to store user input in responses list
+    """
+    # Append user input for each prompt to the list
+    responses = []
+    # Prompt_index will be increased by 1 each time user responds
+    prompt_index = 0
+
+    # For loop to ask for user input for each prompt
+    for prompt in prompts:
+        while True:
+            # prompt the user for a series of inputs a la Mad Libs
+            user_input = input(prompts[prompt_index]).strip()     
+            if user_input:
+                responses.append(user_input)
+                prompt_index += 1
+                break
+            else:
+                print("Input cannot be blank. Please try again.")
+    return responses
 
 def generate_story(responses):
     """
@@ -45,29 +66,14 @@ def main():
         "Enter the name of a famous person: ",
         "Enter an animal: "
     ]
-
-    # Append user input for each prompt to the list
-    responses = []
-    # Prompt_index will be increased by 1 each time user responds
-    prompt_index = 0
-
-    # For loop to ask for user input for each prompt
-    for prompt in prompts:
-        while True:
-            # prompt the user for a series of inputs a la Mad Libs
-            user_input = input(prompts[prompt_index]).strip()
-            
-            if user_input:
-                responses.append(user_input)
-                prompt_index += 1
-                break
-            else:
-                print("Input cannot be blank. Please try again.")
+    
+    # Get user inputs
+    responses = get_user_input(prompts)
 
     # Generate the story
     story= generate_story(responses)
     
-    # print full story
+    # Print full story
     print(story)
 
 if __name__ == "__main__":
