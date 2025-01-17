@@ -1,4 +1,4 @@
-# Text Game: Room Navigation
+# Text Based Adventure Game
 
 ## Overview
 This is a Python-based text game where users can navigate through a virtual house using simple text commands. The house consists of multiple rooms, each with a unique description. Users can move left, right, up, or down within the house, with boundaries and limits enforced. The game provides feedback on movements, tracks the number of steps taken, and allows users to stop the game at any time.
