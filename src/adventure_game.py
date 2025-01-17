@@ -6,7 +6,6 @@ out a description. You'll also need to set limits for how far the user can move.
 create “walls” around the rooms that tell the user, “You can't move further in this direction.”
 """
 
-# utility function to print the welcome message and the floor plan
 def welcome_message():
     """Utility function to print the welcome message and the floor plan"""
     print(
@@ -102,7 +101,7 @@ def main():
         if (new_row_index, new_column_index) != (current_row_index, current_column_index):
             current_row_index, current_column_index = new_row_index, new_column_index
             walk_count += 1
-            print(f"\nYou moved left to the {room[current_row_index][current_column_index]}.")
+            print(f"\nYou moved to the {room[current_row_index][current_column_index]}.")
 
         # Display walk count
         print(f"\nTotal walks taken: {walk_count}\n")
