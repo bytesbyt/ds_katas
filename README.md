@@ -1,5 +1,5 @@
 
-# Mad Libs Generator
+# 1. Mad Libs Generator
 
 ## Overview
 The Mad Libs Generator is a Python-based program that creates a fun and interactive experience where users provide various inputs (e.g., nouns, adjectives, verbs), which are then used to fill in the blanks of a prewritten story template. Inspired by the classic Mad Libs game, this program combines user creativity with automation to generate unique and entertaining stories.
@@ -64,7 +64,9 @@ Since the dog didn't want to fight against a dragon, the dog decided to give up 
 
 
 
-# Text Based Adventure Game
+
+
+# 2. Text Based Adventure Game
 
 ## Overview
 This is a Python-based text game where users can navigate through a virtual house using simple text commands. The house consists of multiple rooms, each with a unique description. Users can move left, right, up, or down within the house, with boundaries and limits enforced. The game provides feedback on movements, tracks the number of steps taken, and allows users to stop the game at any time.
