@@ -149,6 +149,3 @@ You moved to the bedroom, where the magic happens.
 
 Total walks taken: 1
 ```
-
-
-
