@@ -1,3 +1,69 @@
+
+# Mad Libs Generator
+
+## Overview
+The Mad Libs Generator is a Python-based program that creates a fun and interactive experience where users provide various inputs (e.g., nouns, adjectives, verbs), which are then used to fill in the blanks of a prewritten story template. Inspired by the classic Mad Libs game, this program combines user creativity with automation to generate unique and entertaining stories.
+
+## Features
+- **Interactive Prompts**: The program asks the user for specific inputs, such as an adjective, a noun, or a verb.
+- **Story Generation**: Inputs are dynamically placed into a predefined story template to create a custom story.
+- **Input Validation**: Ensures that users do not leave inputs blank.
+- **Replayability**: Easily extendable to include multiple story templates for a more diverse experience.
+
+## How to Run
+### Prerequisites
+- Python 3.6 or higher installed on your system.
+
+### Steps
+1. Clone the repository or download the script file.
+   ```bash
+   git clone https://github.com/bytesbyt/ds_katas.git
+   ```
+2. Navigate to the script directory:
+   ```bash
+   cd src
+   ```
+3. Run the program:
+   ```bash
+   python mad_libs_generator.py
+   ```
+
+### Example Gameplay
+```text
+Enter an adjective: funny
+Enter a noun: dog
+Enter the name of a country: Italy
+Enter a type of building: castle
+Enter an item that you like: diamond
+Enter another item that you like: ruby
+Enter an emotion: excited
+Enter a verb ending with -ing: dancing
+Enter the name of a famous person: Albert Einstein
+Enter an animal: dragon
+
+Your Mad Libs story:
+
+Once upon a time there was a funny dog. One day, the dog went to Italy and discovered a hidden castle with one diamond and one ruby.
+Upon seeing the diamond and the ruby, the dog felt excited and started dancing.
+Albert Einstein then walked in and saw the dog dancing, and told the dog that if they decided to stay in the castle, they could keep the diamond and the ruby but would need to fight against a dragon.
+If the dog decided to leave then they would go back to Italy and never see a ruby again.
+Since the dog didn't want to fight against a dragon, the dog decided to give up the ruby and return to Italy with a diamond.
+```
+
+## Code Structure
+1. **`get_user_input(prompts)`**:
+   - Collects user responses based on predefined prompts.
+   - Ensures inputs are non-empty.
+2. **`generate_story(responses)`**:
+   - Takes the user inputs and generates a Mad Libs story by placing them into a predefined story template.
+3. **`main()`**:
+   - Controls the program flow by defining prompts, gathering inputs, generating the story, and printing the result.
+4. **`if __name__ == "__main__":`**:
+   - Ensures the script runs as a standalone program when executed directly.
+
+
+
+
 # Text Based Adventure Game
 
 ## Overview

@@ -62,6 +62,7 @@ def move(current_row_index, current_column_index, direction, room):
 
 
 def main():
+    """ Main game loop """
     # invoke utility function to print the welcome message
     welcome_message()
 
@@ -106,5 +107,6 @@ def main():
         # Display walk count
         print(f"\nTotal walks taken: {walk_count}\n")
 
+# Execute the game
 if __name__ == "__main__":
     main()

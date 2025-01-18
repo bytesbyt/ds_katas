@@ -52,6 +52,9 @@ def generate_story(responses):
 
 
 def main():
+    """
+    Main generator loop
+    """
 
     # Define a list of prompts for user input
     prompts = [
@@ -76,5 +79,6 @@ def main():
     # Print full story
     print(story)
 
+# Execute the program
 if __name__ == "__main__":
     main()
