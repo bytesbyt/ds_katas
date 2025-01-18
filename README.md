@@ -11,10 +11,10 @@ The Mad Libs Generator is a Python-based program that creates a fun and interact
 - **Replayability**: Easily extendable to include multiple story templates for a more diverse experience.
 
 ## How to Run
-### Prerequisites
+### Requirements
 - Python 3.6 or higher installed on your system.
 
-### Steps
+### Installation
 1. Clone the repository or download the script file.
    ```bash
    git clone https://github.com/bytesbyt/ds_katas.git
@@ -62,10 +62,6 @@ Since the dog didn't want to fight against a dragon, the dog decided to give up 
    - Ensures the script runs as a standalone program when executed directly.
 
 
-
-
-
-
 # 2. Text Based Adventure Game
 
 ## Overview
@@ -77,6 +73,23 @@ This is a Python-based text game where users can navigate through a virtual hous
 - Enforced boundaries to prevent moving outside the grid.
 - Tracks the number of steps taken by the user.
 - Option to stop the game at any time.
+
+## Requirements
+- Python 3.6 or higher
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/bytesbyt/ds_katas.git
+   ```
+2. Navigate to the directory:
+   ```bash
+   cd src
+   ```
+3. Run the game:
+   ```bash
+   python adventure_game.py
+   ```
 
 ## How to Play
 1. Run the game using Python:
@@ -137,20 +150,5 @@ You moved to the bedroom, where the magic happens.
 Total walks taken: 1
 ```
 
-## Requirements
-- Python 3.6 or higher
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/bytesbyt/ds_katas.git
-   ```
-2. Navigate to the directory:
-   ```bash
-   cd src
-   ```
-3. Run the game:
-   ```bash
-   python adventure_game.py
-   ```
 
